@@ -11,7 +11,7 @@ void PrintStringArray(string[] stringArray)
     {
 
         Console.Write($"{stringArray[k]}\t");
-        
+
     }
 }
 
@@ -54,21 +54,21 @@ incomingStringArray[8] = GenerateRandomString();
 PrintStringArray(incomingStringArray);
 Console.WriteLine();
 
-string [] outgoingStringArray= new string[9];
+string[] outgoingStringArray = new string[9];
 for (int i = 0; i < outgoingStringArray.Length; i++)
 {
-    outgoingStringArray[i]= String.Empty;
+    outgoingStringArray[i] = String.Empty;
 }
 
-int count=0;
+int count = 0;
 for (int l = 0; l < incomingStringArray.Length; l++)
 {
-    
-    if (incomingStringArray[l].Length<=3)
+
+    if (incomingStringArray[l].Length <= 3)
     {
 
-    outgoingStringArray[count] = incomingStringArray[l];
-    count++;
+        outgoingStringArray[count] = incomingStringArray[l];
+        count++;
     }
 
 }
